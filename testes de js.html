@@ -1,40 +1,118 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8" lang="pt-br">
-        <script>
-                function tabuada(){
-                   
-                    var numero = parseInt(prompt("Escolha o numero que voce quer multiplicar: "));
-                  
-                    
-                    for(let i = 1; i <=10; i++){
-                        var multiplic = i * numero;
-                       document.write("<br> Tabuada do "+ i +"\n = "+ multiplic)
-                    }
-                    
-                } 
-                function IMC(){
 
-                }
-                function formulas(){
+<head>
+    <meta charset="utf-8" lang="pt-br">
+    <script>
+      /*  function tabuada() {
+            var numero = parseInt(prompt("Escolha o numero que voce quer multiplicar: "));
 
-                }
-                function descontos(){
+            for (let i = 1; i <= 10; i++) {
+                var multiplic = i * numero;
+                document.write("<br> Tabuada do " + i + "\n = " + multiplic);
+            }
 
-                }
-                function salarios(){
-
-                }
-        </script>
-
-    </head>
-    <body>
-        <button onclick="tabuada()"></button>
-        <button onclick="IMC()">Clique aqui para IMC</button>
-        <button onclick="formulas()">Clique aqui para Formulas</button>
-        <button onclick="descontos()">Clique aqui para Descontos</button>
-        <button onclick="salarios()">Clique aqui para Salarios</button>
+        }
         
-    </body>
+        function IMC() {
+            let peso = parseFloat(prompt("Digite seu peso: "))
+            let altura = parseFloat(prompt("Digite sua altura: "))
+            
+            let IMC = peso/ (altura*altura);
+            if (IMC <18.5) alert("seu IMC é: "+ IMC.toFixed(2)+ " Você esta a baixo do peso");
+            else if (IMC <25)alert("seu IMC é: "+ IMC.toFixed(2)+" Peso normal.");
+            else if (IMC <30) alert("seu IMC é: "+ IMC.toFixed(2)+" Sobrepeso.");
+            else if (IMC <35) alert("seu IMC é: "+ IMC.toFixed(2)+"  Obesidade I.");
+            else if (IMC <40) alert("seu IMC é: "+ IMC.toFixed(2)+" Obesidade II.");
+            else alert("seu IMC é: "+ IMC.toFixed(2)+" Obesidade III");
+            
+        }
+
+        function formulas() {
+
+        }
+        function descontos() {
+
+        }
+        function salarios() {
+
+        }
+        function bas(){
+            
+            let a = parseInt(prompt("digite um valor para A: "));
+            let b = parseInt(prompt("digite um valor para B: "));
+            let c = parseInt(prompt("Digite um Valor para C: "));
+            let bas = -b+(((b*b)-4*a*c)*((b*b)-4*a*c))/2*a;
+            alert("O valor da Baskara positiva é: "+ bas);
+
+            let bas2 = -b-(((b*b)-4*a*c)*((b*b)-4*a*c))/2*a;
+            alert("O valor da Baskara positiva é: "+ bas2);
+        }
+        function laco(){
+            for(i = 0; i <= 1500; i++){
+                if (i % 6 == 0 && i % 9 == 0){
+                    document.write("numeros multiplos de 3, 6 e 9: "+ i +"<br>");
+                }
+            }
+        }   
+        function laco2(){
+            for(i = 0; i <=700; i++){
+                if(l % 2 == 1 ){
+                    document.write("A area cujo o resultado é impar é: " + l+ "<br>");
+                }
+
+          }  
+        }
+        function triangulo(){
+            const h = 10;
+            const a = 5;
+            for(i = 0; i <=2000; i++){
+
+            const g = Math.sqrt(h ** 2 + (a + i) ** 2);
+            if(Math.round(g) % 2 === 0){
+                 document.write("A area cujo o resultado é impar é: " + g.toFixed(2)+ "<br>");
+            }        
+            }
+        }
+        function raiz(){
+             for(i = 0; i <=50; i++){
+                let raz = Math.sqrt(i);
+                document.write("o valor da raiz é: "+ raz.toFixed(2) +"<br>");
+             }
+
+        }*/
+      
+        function numeros(){
+            for(i = 20; i>=0; i--){
+              document.write(i + ", ");
+            }
+            document.write(" --> Fim!");
+        }
+       numeros();
+       
+       function fatorial(){
+        var num = parseInt(prompt("escolha um numwero para fatorar: "));
+        for (num = 0; num>= num; num++){
+            
+        } 
+       }
+    </script>
+
+</head>
+
+<body>
+  <!-- <button onclick="tabuada()">Clique aqui para a tabuada</button>
+    <button onclick="IMC()">Clique aqui para IMC</button>
+    <button onclick="formulas()">Clique aqui para Formulas</button>
+    <button onclick="descontos()">Clique aqui para Descontos</button>
+    <button onclick="salarios()">Clique aqui para Salarios</button>
+    <button onclick="bas()">Clique aqui para Baskara</button>
+    <button onclick="laco()">Clique aqui para LAÇO</button>
+    <button onclick="laco2()">Clique aqui para LAÇO 2</button>
+    <button onclick="raiz()">Clique aqui para LAÇO 4</button>-->
+    <!-- <button onclick="numeros()">Clique aqui para LAÇO 5</button> -->
+      
+
+</body>
+
 </html>
